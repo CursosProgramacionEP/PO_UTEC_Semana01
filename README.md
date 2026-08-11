@@ -55,14 +55,7 @@ contiene el enunciado completo y un `main` vacío listo para completar.
 | `Sesion_1B/Ejercicios/ej3_partiendo_un_numero.cpp` | Parte entera y parte fraccionaria |
 | `Sesion_1B/Ejercicios/ej4_distancia_euclidea.cpp` | Distancia entre dos puntos (`cmath`) |
 
-## Notas
 
-- Los códigos se mantienen **fieles a las diapositivas**, incluyendo los
-  identificadores con tilde (`año`, `posición`, `diámetro`, `área`). C++ los
-  acepta, pero si su compilador se queja puede renombrarlos sin tildes.
-- Todos los archivos están en **UTF-8**. En Windows, si la consola muestra los
-  acentos mal, ejecute `chcp 65001` en la terminal de CLion.
-- Estándar del proyecto: **C++20** (definido en `CMakeLists.txt`).
 
 ## Compilar sin CLion
 
@@ -76,8 +69,3 @@ O un solo archivo:
 g++ -std=c++20 Sesion_1A/01_hola_mundo.cpp -o hola && ./hola
 ```
 
-## Reconocimiento de autoría
-
-Material reestructurado, ampliado y transcrito en LaTeX por Vittorino Mandujano
-Cornejo, basándose en los contenidos desarrollados originalmente por María Hilda
-Bermejo y José Fiestas.
