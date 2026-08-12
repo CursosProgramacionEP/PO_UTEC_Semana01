@@ -26,6 +26,10 @@ int main() {
 
     cout << "CIRCUITO DIGITAL" << endl;
 
+
+    //cout << "Ingrese a, b, c, d (1 o 0): ";
+    //cin >> a >> b >> c >> d;
+
     y = !((!a || b) && (c && !d));
 
     cout << "La salida del circuito digital es : " << y << endl;
