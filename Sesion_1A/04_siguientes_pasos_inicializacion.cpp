@@ -17,6 +17,7 @@ using namespace std;
 int main() {
     int a(2), b{3}, c = {6};
     int x = a * b - c;
+
     cout << "Resultado: " << x << endl;
     return 0;
 }

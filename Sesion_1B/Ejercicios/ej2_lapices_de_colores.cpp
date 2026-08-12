@@ -31,6 +31,25 @@
 using namespace std;
 
 int main() {
-    // TODO: leer la cantidad de colores y calcular las cajas y el sobrante.
+    int cantidad, caja24, caja12, caja6;
+
+    cout << "Ingrese la cantidad de colores: ";
+    cin >> cantidad;
+
+    caja24   = cantidad / 24;
+    cantidad = cantidad % 24;   // me quedo con lo que sobró
+
+    caja12   = cantidad / 12;
+    cantidad = cantidad % 12;
+
+    caja6    = cantidad / 6;
+    cantidad = cantidad % 6;    // este último residuo es el sobrante
+
+    cout << "Se requieren:" << endl;
+    cout << caja24 << " cajas de 24 colores" << endl;
+    cout << caja12 << " cajas de 12 colores" << endl;
+    cout << caja6 << " caja de 6 colores" << endl;
+    cout << cantidad << " colores sobran." << endl;
+
     return 0;
 }

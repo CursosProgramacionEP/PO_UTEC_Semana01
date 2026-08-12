@@ -19,5 +19,16 @@ using namespace std;
 
 int main() {
     // TODO: declarar las variables, leer F por consola, calcular C e imprimir.
+
+    float C,F;
+
+    cout<<"convertir Fahrenheit a celsius"<<endl;
+    cout<<"Ingrese el temperatura: ";
+    cin>>F;
+
+    C=(F-32)*5.0f/9.0f;
+
+    cout<<"El temperatura es: "<<C<<endl;
+
     return 0;
 }
