@@ -14,12 +14,21 @@ listos para abrirse y ejecutarse en **CLion**.
 3. En la barra superior, junto al botón ▶, elija el **target** (programa) que
    quiere ejecutar y presione `Shift + F10`.
 
-Cada archivo `.cpp` es un programa independiente y se convierte automáticamente
-en un target de CLion. El nombre del target es la ruta del archivo con `_` en
-lugar de `/`; por ejemplo `Sesion_1A/01_hola_mundo.cpp` → **`Sesion_1A_01_hola_mundo`**.
+Cada archivo `.cpp` **que tiene `main()`** se convierte automáticamente en un
+target de CLion. El nombre del target es la ruta del archivo con `_` en lugar de
+`/`; por ejemplo `Sesion_1A/01_hola_mundo.cpp` → **`Sesion_1A_01_hola_mundo`**.
 
-Para agregar un ejercicio nuevo basta con crear el `.cpp` dentro de `Sesion_1A/` o
-`Sesion_1B/` y recargar el proyecto CMake.
+Los `.cpp` **sin `main()`** (la implementación de una clase, por ejemplo) se
+compilan junto con los programas de su misma carpeta, y sus cabeceras se pueden
+incluir con `#include "Punto.h"` sin escribir rutas.
+
+Para agregar un ejercicio nuevo basta con crear el `.cpp` en cualquier carpeta y
+recargar el proyecto CMake. No hay que editar `CMakeLists.txt` nunca.
+
+> Al crear archivos en CLion use **New → C/C++ Source File** y **desmarque todo
+> en "Add to targets"**. Si se deja marcado, CLion escribe el archivo dentro de
+> un `add_executable` existente y el proyecto deja de enlazar con el error
+> `duplicate symbol '_main'`.
 
 ## Contenido
 
@@ -42,6 +51,7 @@ Para agregar un ejercicio nuevo basta con crear el `.cpp` dentro de `Sesion_1A/`
 | `Sesion_1B/02_jugando_con_pelotas.cpp` | Actividad 2 — Área y volumen de una esfera |
 | `Sesion_1B/03_circuito_digital.cpp` | Actividad 3 — Circuito digital (`!`, `&&`, `||`) |
 | `Sesion_1B/04_circuito_digital_v2.cpp` | Actividad 3 — Variante con `1` y `0` |
+| `Sesion_1B/05_circuito_digital_v3.cpp` | Actividad 3 — Variante con `not`, `and`, `or` |
 
 ### Sesion_1B/Ejercicios — Más ejercicios (para resolver)
 

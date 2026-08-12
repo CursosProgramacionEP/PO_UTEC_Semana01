@@ -1,10 +1,14 @@
 // CS6003 - Programación 2 | Unidad 1
 // Laboratorio 1B - Actividad 3: Circuito digital
 //
-// Compuertas lógicas y sus operadores en C++:
-//   - Negación / inversión (NOT) : !
-//   - Conjunción "y"     (AND)   : &&
-//   - Disyunción "o"     (OR)    : ||
+// Compuertas lógicas y sus operadores en C++ (cada uno se puede escribir de
+// dos formas equivalentes):
+//   - Negación / inversión (NOT) : !   o   not
+//   - Conjunción "y"     (AND)   : &&  o   and
+//   - Disyunción "o"     (OR)    : ||  o   or
+//
+// Aquí se usan los símbolos; ver 05_circuito_digital_v3.cpp para la variante
+// con palabras clave.
 //
 // El circuito de la diapositiva corresponde a:  y = !((!a || b) && (c && !d))
 
