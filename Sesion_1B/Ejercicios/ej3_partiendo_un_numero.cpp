@@ -23,6 +23,16 @@
 using namespace std;
 
 int main() {
-    // TODO: leer el número, separar parte entera y parte fraccionaria.
+    double numero;
+
+    cout << "Ingrese un número flotante: ";
+    cin >> numero;
+
+    int entera = numero;                 // al convertir a int, se trunca
+    double fraccion = numero - entera;   // lo que se perdió al truncar
+
+    cout << "Parte entera: " << entera << endl;
+    cout << "Parte fraccionaria: " << fraccion << endl;
+
     return 0;
 }

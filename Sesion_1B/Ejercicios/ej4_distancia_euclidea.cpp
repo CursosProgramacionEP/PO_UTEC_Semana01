@@ -15,10 +15,18 @@
 
 #include <cmath>
 #include <iostream>
-#include <string>
 using namespace std;
 
 int main() {
-    // TODO: leer las coordenadas de P1 y P2, calcular e imprimir la distancia.
+    double x1, y1, x2, y2;
+
+    cout << "Ingrese las coordenadas de P1 (x1 y1): ";
+    cin >> x1 >> y1;
+    cout << "Ingrese las coordenadas de P2 (x2 y2): ";
+    cin >> x2 >> y2;
+
+    double L = sqrt(pow(x1 - x2, 2) + pow(y1 - y2, 2));
+
+    cout << "La distancia entre P1 y P2 es: " << L << endl;
     return 0;
 }
